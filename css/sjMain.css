@@ -1,0 +1,85 @@
+body{
+    background-image: url("../assets/space.jpeg");
+}
+canvas {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0;
+ }
+
+#sJHeader{
+	color: #ff0000;
+	font-weight: 600;
+    letter-spacing: 0.7em;
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+}
+#instructions{
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+}
+.invisible{
+    visibility: hidden;
+}
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+#gameCanvas{
+    margin-top: 10%;
+}
+html, body, main {
+    max-height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.textContainer{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.canvasContainer{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+}
+#left{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    height: 90%;
+    width: 50%;
+    z-index: 1;
+}
+#right{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    height: 90%;
+    width: 50%;
+    z-index: 1;
+}
+#shoot{
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    height: 20%;
+    width: 50%;
+    z-index: 1;
+}

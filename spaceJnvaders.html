@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link
+	rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+	integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	crossorigin="anonymous"
+	/>
+	
+	<link rel="stylesheet" href="../css/main.css" />
+	<link rel="stylesheet" href="./css/sjMain.css">
+	<link rel="icon" 
+		  type="image/png" 
+		  href="../img/icon.png">
+	<title>SpaceJnvaders</title>
+</head>
+<body>
+	<header>
+		<div class="menu-btn">
+			<div class="btn-line"></div>
+			<div class="btn-line"></div>
+			<div class="btn-line"></div>
+		</div>
+
+		<nav class="menu">
+			<div class="menu-branding"><div class="portrait"></div></div>
+			<ul class="menu-nav">
+				<li class="nav-item">
+					<a href="../index.html" class="nav-link"> Home </a>
+				</li>
+				<li class="nav-item">
+					<a href="../about.html" class="nav-link"> About </a>
+				</li>
+				<li class="nav-item">
+				  <a href="../randomquotes/rq.html" class="nav-link">
+					RandomQuotes
+				  </a>
+				</li>
+				<li class="nav-item current">
+					<a href="spaceJnvaders.html" class="nav-link">
+						<span><img src="./assets/siicon.png" alt="" class="siicon"></span> Space Jnvaders <span><img src="./assets/siicon.png" alt="" class="siicon"></span>  
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="../aMaze/aMaze.html" class="nav-link">
+						<span><img src="../aMaze/assets/maze.png" alt="" class="siicon"></span> aMaze <span><img src="../aMaze/assets/maze.png" alt="" class="siicon"></span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="../smartrockets/smartRockets.html" class="nav-link">
+						<span><img src="../smartrockets/assets/rocket.png" alt="" class="siicon"></span> Smart Rockets <span><img src="../smartrockets/assets/rocket.png" alt="" class="siicon"></span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+        <div class="textContainer">
+            <h1 class="text-center" id="sJHeader">Space Jnvaders</h1>
+            <div id="instructions" class="invisible">
+                <p>Use Left and right to move and space bar to shoot</p>
+                <p>Touch left and right to move or center bottom to shoot</p>
+                <p>Good Luck!</p>
+            </div>
+        </div>
+        <div class="canvasContainer">
+            <canvas id="gameCanvas" class="invisible"></canvas>
+        </div>
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id="shoot"></div>
+	</main>
+</body>
+<script src="../js/main.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/game.js"></script>
+<script src="./js/controller.js"></script>
+<script src="./js/display.js"></script>
+<script src="./js/engine.js"></script>
+</html>
